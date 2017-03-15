@@ -17,7 +17,7 @@
         foreach($get_data as $fieldname => $fieldvalue)  
         {  
             $child = $doc->createElement($fieldname);      //buat element baru <nama_kolom_tabel>
-            $child = $item->appendChild($child);           //masukkan sebagai anak dari element <item>
+            $child = $item->appendChild($child);           //masukkan sebagai anak dari element <mahasiswa>
          
             $value = $doc->createTextNode($fieldvalue);    //tambahkan isi data database ke element baru
             $value = $child->appendChild($value);
