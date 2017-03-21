@@ -12,7 +12,7 @@ $result = mysqli_query($koneksi, $sql)
 $identitas = array();
 while($row =mysqli_fetch_assoc($result))
 {
-  $identitas[] = $row;
+  $identitas['mahasiswa'][] = $row;
 }
 
 //Menampilkan konversi data pada tabel identitas ke format JSON
